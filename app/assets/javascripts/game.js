@@ -16,7 +16,7 @@ $(document).on('page:load ready', function() {
   var keysDown = {};
 
   var render = function () {
-    context.fillStyle = "#FF00FF";
+    context.fillStyle = "#000";
     context.fillRect(0, 0, width, height);
     player.render();
     computer.render();
@@ -45,7 +45,7 @@ $(document).on('page:load ready', function() {
   }
 
   Paddle.prototype.render = function () {
-    context.fillStyle = "#0000FF";
+    context.fillStyle = "#FFF";
     context.fillRect(this.x, this.y, this.width, this.height);
   };
 
@@ -118,7 +118,7 @@ $(document).on('page:load ready', function() {
   Ball.prototype.render = function () {
     context.beginPath();
     context.arc(this.x, this.y, 5, 2 * Math.PI, false);
-    context.fillStyle = "#000000";
+    context.fillStyle = "#FFF";
     context.fill();
   };
 

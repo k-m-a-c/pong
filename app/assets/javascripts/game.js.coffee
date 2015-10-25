@@ -9,8 +9,8 @@
   canvas.width = width
   canvas.height = height
   context = canvas.getContext('2d')
-  player = new Player()
-  computer = new Computer()
+  player = new Player
+  computer = new Computer
   ball = new Ball(200, 300)
 
   keysDown = {}

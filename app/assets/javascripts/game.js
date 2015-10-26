@@ -16,11 +16,12 @@ $(document).on('page:load ready', function() {
   var keysDown = {};
 
   var render = function () {
-    context.fillStyle = "#000";
+    context.fillStyle = "#1177FB";
     context.fillRect(0, 0, width, height);
     player.render();
     computer.render();
     ball.render();
+    context.beginPath();
   };
 
   var update = function () {
@@ -45,7 +46,7 @@ $(document).on('page:load ready', function() {
   }
 
   Paddle.prototype.render = function () {
-    context.fillStyle = "#FFF";
+    context.fillStyle = "#000";
     context.fillRect(this.x, this.y, this.width, this.height);
   };
 
